@@ -47,7 +47,7 @@ struct ContentView: View {
         Button(action: {
             cardCount += offset
         }, label: {
-            Image(systemName: "rectangle.stack.fill.badge.minus")
+            Image(systemName: symbol)
         })
         .disabled(cardCount + offset < 1 || cardCount + offset > emojis.count)
     }
